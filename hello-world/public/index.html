@@ -27,45 +27,10 @@
   }
 </style>
 
-<input type="file" id="files" name="files[]" multiple />
-<output id="list"></output>
+
 <script>
-  function handleFileSelect(evt) {
-    var files = evt.target.files; // FileList object
-    var file = event.target.files[0];
-        var reader = new FileReader();
-        reader.onload = function(event) {
-          // The file's text will be printed here
-          console.log(event.target.result)
-        };
-
-        reader.readAsText(file);
-      }
   
-
-  document.getElementById('files').addEventListener('change', handleFileSelect, false);
 </script>
-    <!--<script>
-    function handleFileSelect(evt) {
-    const files = evt.target.files; // FileList object
-    console.log("FILES", files[0]);
-    console.log("EVT.TARGET", evt.target)
-
-    // files is a FileList of File objects. List some properties.
-    const output = [];
-    for (var i = 0, f; f = files[i]; i++) {
-      output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ',
-                  f.size, ' bytes, last modified: ',
-                  f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
-                  '</li>');
-    }
-
-    
-    document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
-  }
-
-  document.getElementById('files').addEventListener('change', handleFileSelect, false);
-</script> --!>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
