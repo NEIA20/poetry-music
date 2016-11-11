@@ -6,8 +6,16 @@
     "react-scripts": "0.7.0"
   },
   "dependencies": {
+    "alchemy-api": "^1.3.3",
+    "apparatus": "0.0.9",
+    "dgram": "^1.0.1",
+    "log4js": "^1.0.1",
+    "natural": "^0.4.0",
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "syllable": "^1.0.0",
+    "sylvester": "0.0.21",
+    "underscore": "^1.8.3"
   },
   "scripts": {
     "start": "react-scripts start",
