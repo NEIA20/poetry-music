@@ -24,7 +24,7 @@ class Poem extends Component {
 
 
     render(){
-        console.log("POEMPROPS", this.props)
+        // console.log("POEMPROPS", this.props)
         return(
            
             <div id="content">{this.props.contents}</div>

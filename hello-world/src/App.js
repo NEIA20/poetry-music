@@ -17,15 +17,15 @@ class App extends Component {
 
   handleFileSelect(evt){
     const files = evt.target.files; 
-    console.log("FILES", typeof files[0])// FileList object
+    // console.log("FILES", typeof files[0])// FileList object
      const file = evt.target.files[0];
     this.setState({file: files[0]})
-    console.log("FILEON STATE", this.state.file)
+    // console.log("FILEON STATE", this.state.file)
    
         const reader = new FileReader();
         reader.onload = (evt) => {
           // The file's text will be printed here
-          console.log(typeof evt.target.result)
+          // console.log(typeof evt.target.result)
           this.gotFileContents(evt.target.result)
          
         };
