@@ -40,7 +40,7 @@ var VF = Vex.Flow;
 var div = document.getElementById("boo")
 var renderer = new VF.Renderer(div, VF.Renderer.Backends.SVG)
 
-renderer.resize(500, 10000);
+renderer.resize(1000, 10000);
 var context = renderer.getContext();
 context.setFont("Arial", 10, "").setBackgroundFillStyle("#eed")
 
@@ -78,10 +78,18 @@ const ipaOfWords = [ { IPA: 'ɪˈf', syllables: 1, note: 'i' },
   { IPA: undefined, syllables: 2, note: 'y' },
   { IPA: 'mejˈk', syllables: 1, note: 'm' },
   { IPA: 'ʌlawˈʌns', syllables: 3, note: 'a' },
+  { IPA: 'fɔˈɹ', syllables: 1, note: 'f' },
+  { IPA: 'ðɛˈɹ', syllables: 1, note: 't' }
+//   { IPA: 'dawˈtɪŋ', syllables: 2, note: 'd' } //problem
+    // { IPA: 'mɛˈn', syllables: 1, note: 'm' }
+//   { IPA: 'dawˈt', syllables: 1, note: 'd' },
+//   { IPA: undefined, syllables: 2, note: 'y' },
+//   { IPA: 'mejˈk', syllables: 1, note: 'm' },
+//   { IPA: 'ʌlawˈʌns', syllables: 3, note: 'a' },
 //   { IPA: 'fɔˈɹ', syllables: 1, note: 'f' },
 //   { IPA: 'ðɛˈɹ', syllables: 1, note: 't' },
 //   { IPA: 'dawˈtɪŋ', syllables: 2, note: 'd' },
-  
+//   { IPA: undefined, syllables: 2, note: 't' },
   ]
 
 
@@ -287,9 +295,18 @@ for(let i = 0; i<notePackageArray.length; i++){
         voice.addTickables(notePackageArray[i]);
         var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 400);
        voice.draw(context, stavesArray[i]);
-    }else{
+    }else if (i%2 ===0){
         y+=150;
-        stavesArray.push(new VF.Stave(x, y, 400));
+        stavesArray.push(new VF.Stave(10, y, 400));
+        stavesArray[i].setContext(context).draw()
+        // console.log("STAVESARRAYEVEN", stavesArray, i)
+         var voice = new VF.Voice({num_beats: 4,  beat_value: 4});
+        voice.addTickables(notePackageArray[i]);
+        var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 400);
+       voice.draw(context, stavesArray[i]);
+    }else {
+        // x+=430;
+        stavesArray.push(new VF.Stave(430, y, 400));
         stavesArray[i].setContext(context).draw()
         // console.log("STAVESARRAYEVEN", stavesArray, i)
          var voice = new VF.Voice({num_beats: 4,  beat_value: 4});
