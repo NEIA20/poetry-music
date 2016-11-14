@@ -142,32 +142,32 @@ const ipaOfWords = [
 
 
 const notesDictionary = {
-        'a': "f/3", 
-        'b': "g/3",
-        'c': "a/3",
-        'd': "b/3",
-        'e': "c/4",
-        'f': "d/4",
-        'g': "e/4",
-        'h': "f/4",
-        'i': 'g/4',
-        'j': "a/4",
-        'k': "b/4",
-        'l': 'c/5',
-        'm': 'd/5',
-        'n': 'e/5',
-        'o': 'f/5',
-        'p': 'g/5',
-        'q': 'a/5',
-        'r': 'b/5',
-        's': 'c/6',
-        't': 'd/6',
-        'u': 'e/6',
-        'v': 'f/6',
-        'w': 'g/6',
-        'x': 'a/6',
-        'y': 'b/6',
-        'z': 'c/6'
+        'a': "c/3", 
+        'b': "d/3",
+        'c': "e/3",
+        'd': "f/3",
+        'e': "g/3",
+        'f': "a/3",
+        'g': "b/3",
+        'h': "c/4",
+        'i': 'd/4',
+        'j': "e/4",
+        'k': "f/4",
+        'l': 'g/4',
+        'm': 'a/4',
+        'n': 'b/4',
+        'o': 'c/5',
+        'p': 'd/5',
+        'q': 'e/5',
+        'r': 'f/5',
+        's': 'g/5',
+        't': 'a/5',
+        'u': 'b/5',
+        'v': 'c/6',
+        'w': 'd/6',
+        'x': 'e/6',
+        'y': 'f/6',
+        'z': 'g/6'
 }
 
 const durationDictionary = {
@@ -194,6 +194,7 @@ for(let i = 0; i<ipaOfWords.length; i++){
     // console.log(ipaOfWords.length)
     //find number of staves needed based on the 
     //total duration of the words 
+    console.log("musicNote-----", musicNote)
 
 
     if(numNotes < 32){
@@ -238,8 +239,8 @@ for(let i = 0; i<ipaOfWords.length; i++){
     }
     // console.log("NOTEDURATION", noteDuration)
     // console.log("NUMNOTES", numNotes);
-    console.log("NOTESPACKAGE", notesPackage)
-console.log("NOTESPACKAGEARRAY", notePackageArray)
+//     console.log("NOTESPACKAGE", notesPackage)
+// console.log("NOTESPACKAGEARRAY", notePackageArray)
     // console.log(char.charCodeAt(0));
     // const noteCharCode = char.charCodeAt(0) + 2;
     // const musicNote = String.fromCharCode(noteCharCode);
