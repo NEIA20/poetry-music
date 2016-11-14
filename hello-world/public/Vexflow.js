@@ -50,7 +50,8 @@ context.setFont("Arial", 10, "").setBackgroundFillStyle("#eed")
 //process notes below 
 
 
-const ipaOfWords = [ { IPA: 'ɪˈf', syllables: 1, note: 'i' },
+const ipaOfWords = [ 
+    { IPA: 'ɪˈf', syllables: 1, note: 'i' },
   { IPA: 'juˈ', syllables: 1, note: 'y' },
   { IPA: 'kæˈn', syllables: 1, note: 'c' },
   { IPA: 'kiˈp', syllables: 1, note: 'k' },
@@ -75,56 +76,55 @@ const ipaOfWords = [ { IPA: 'ɪˈf', syllables: 1, note: 'i' },
   { IPA: 'ɔˈl', syllables: 1, note: 'a' },
   { IPA: 'mɛˈn', syllables: 1, note: 'm' }, //here
   { IPA: 'dawˈt', syllables: 1, note: 'd' },
+
   { IPA: undefined, syllables: 2, note: 'y' },
   { IPA: 'mejˈk', syllables: 1, note: 'm' },
-  { IPA: 'ʌlawˈʌns', syllables: 3, note: 'a' },
+  { IPA: 'ʌlawˈʌns', syllables: 2, note: 'a' },
   { IPA: 'fɔˈɹ', syllables: 1, note: 'f' },
-  { IPA: 'ðɛˈɹ', syllables: 1, note: 't' }
-//   { IPA: 'dawˈtɪŋ', syllables: 2, note: 'd' } //problem
-    // { IPA: 'mɛˈn', syllables: 1, note: 'm' }
-//   { IPA: 'dawˈt', syllables: 1, note: 'd' },
-//   { IPA: undefined, syllables: 2, note: 'y' },
-//   { IPA: 'mejˈk', syllables: 1, note: 'm' },
-//   { IPA: 'ʌlawˈʌns', syllables: 3, note: 'a' },
-//   { IPA: 'fɔˈɹ', syllables: 1, note: 'f' },
-//   { IPA: 'ðɛˈɹ', syllables: 1, note: 't' },
-//   { IPA: 'dawˈtɪŋ', syllables: 2, note: 'd' },
-//   { IPA: undefined, syllables: 2, note: 't' },
-  ]
-
-
-//   { IPA: 'mɛˈn', syllables: 1, note: 'm' },
-//   { IPA: 'dawˈt', syllables: 1, note: 'd' },
-//   { IPA: undefined, syllables: 2, note: 'y' },
-//   { IPA: 'mejˈk', syllables: 1, note: 'm' },
-//   { IPA: 'ʌlawˈʌns', syllables: 3, note: 'a' },
-//   { IPA: 'fɔˈɹ', syllables: 1, note: 'f' },
-//   { IPA: 'ðɛˈɹ', syllables: 1, note: 't' },
-//   { IPA: 'dawˈtɪŋ', syllables: 2, note: 'd' },
-//   { IPA: undefined, syllables: 2, note: 't' },
-//   { IPA: 'juˈ', syllables: 1, note: 'y' },
-//   { IPA: 'kæˈn', syllables: 1, note: 'c' },
-//   { IPA: 'wejˈt', syllables: 1, note: 'w' },
-//   { IPA: 'ʌnd', syllables: 1, note: 'a' },
-//   { IPA: 'nɑˈt', syllables: 1, note: 'n' },
-//   { IPA: 'biˈ', syllables: 1, note: 'b' },
-//   { IPA: 'tajˈɚd', syllables: 1, note: 't' },
-//   { IPA: 'bajˈ', syllables: 1, note: 'b' },
-//   { IPA: undefined, syllables: 3, note: 'w' },
-//   { IPA: 'biˈɪŋ', syllables: 2, note: 'b' },
-//   { IPA: 'lajˈd', syllables: 1, note: 'l' },
-//   { IPA: undefined, syllables: 2, note: 'a' },
-//   { IPA: undefined, syllables: 1, note: 'd' },
-//   { IPA: 'diˈl', syllables: 1, note: 'd' },
-//   { IPA: 'ɪn', syllables: 1, note: 'i' },
-//   { IPA: undefined, syllables: 2, note: 'l' },
-//   { IPA: 'biˈɪŋ', syllables: 2, note: 'b' },
-//   { IPA: undefined, syllables: 2, note: 'h' },
-//   { IPA: undefined, syllables: 1, note: 'd' },
-//   { IPA: 'gɪˈv', syllables: 1, note: 'g' },
-//   { IPA: 'wejˈ', syllables: 1, note: 'w' },
-//   { IPA: 'tuˈ', syllables: 1, note: 't' },
-//   { IPA: undefined, syllables: 2, note: 'h' } ]
+  { IPA: 'ðɛˈɹ', syllables: 1, note: 't' },
+  { IPA: 'dawˈtɪŋ', syllables: 2, note: 'd' }, //problem
+    { IPA: 'mɛˈn', syllables: 1, note: 'm' },
+  { IPA: 'dawˈt', syllables: 1, note: 'd' },
+  { IPA: undefined, syllables: 2, note: 'y' },
+  { IPA: 'mejˈk', syllables: 1, note: 'm' },
+  { IPA: 'ʌlawˈʌns', syllables: 2, note: 'a' },
+  { IPA: 'fɔˈɹ', syllables: 1, note: 'f' },
+  { IPA: 'ðɛˈɹ', syllables: 1, note: 't' },
+  { IPA: 'dawˈtɪŋ', syllables: 2, note: 'd' },
+  { IPA: undefined, syllables: 2, note: 't' },
+    { IPA: 'mɛˈn', syllables: 1, note: 'm' },
+  { IPA: 'dawˈt', syllables: 1, note: 'd' },
+  { IPA: undefined, syllables: 2, note: 'y' },
+  { IPA: 'mejˈk', syllables: 1, note: 'm' },
+  { IPA: 'ʌlawˈʌns', syllables: 2, note: 'a' },
+  { IPA: 'fɔˈɹ', syllables: 1, note: 'f' },
+  { IPA: 'ðɛˈɹ', syllables: 1, note: 't' },
+  { IPA: 'dawˈtɪŋ', syllables: 2, note: 'd' },
+  { IPA: undefined, syllables: 2, note: 't' },
+  { IPA: 'juˈ', syllables: 1, note: 'y' },
+  { IPA: 'kæˈn', syllables: 1, note: 'c' },
+  { IPA: 'wejˈt', syllables: 1, note: 'w' },
+  { IPA: 'ʌnd', syllables: 1, note: 'a' },
+  { IPA: 'nɑˈt', syllables: 1, note: 'n' },
+  { IPA: 'biˈ', syllables: 1, note: 'b' },
+  { IPA: 'tajˈɚd', syllables: 1, note: 't' },
+  { IPA: 'bajˈ', syllables: 1, note: 'b' },
+  { IPA: undefined, syllables: 2, note: 'w' },
+  { IPA: 'biˈɪŋ', syllables: 2, note: 'b' },
+  { IPA: 'lajˈd', syllables: 1, note: 'l' },
+  { IPA: undefined, syllables: 2, note: 'a' },
+  { IPA: undefined, syllables: 1, note: 'd' },
+  { IPA: 'diˈl', syllables: 1, note: 'd' },
+  { IPA: 'ɪn', syllables: 1, note: 'i' },
+  { IPA: undefined, syllables: 2, note: 'l' },
+  { IPA: 'biˈɪŋ', syllables: 2, note: 'b' },
+  { IPA: undefined, syllables: 2, note: 'h' },
+  { IPA: undefined, syllables: 1, note: 'd' },
+  { IPA: 'gɪˈv', syllables: 1, note: 'g' },
+  { IPA: 'wejˈ', syllables: 1, note: 'w' },
+  { IPA: 'tuˈ', syllables: 1, note: 't' },
+  { IPA: undefined, syllables: 2, note: 'h' }
+] 
 // const ipaOfWords = [ { IPA: 'ɪˈf', syllables: 1, note: 'i' },
 //   { IPA: undefined, syllables: 1, note: 'y' },
 //   { IPA: 'kæˈn', syllables: 1, note: 'c' },
@@ -135,7 +135,10 @@ const ipaOfWords = [ { IPA: 'ɪˈf', syllables: 1, note: 'i' },
 //   { IPA: 'ɔˈl', syllables: 1, note: 'a' },
 //   { IPA: 'ʌbawˈt', syllables: 2, note: 'a' },
 //   { IPA: 'juˈ', syllables: 1, note: 'y' },
-//   { IPA: 'ɑˈɹ', syllables: 1, note: 'a' } ]
+//   { IPA: 'ɑˈɹ', syllables: 1, note: 'a' }
+
+
+//  ]
 
 
 const notesDictionary = {
@@ -211,7 +214,7 @@ for(let i = 0; i<ipaOfWords.length; i++){
             numNotes +=1;
         }
 
-        notesPackage.push(new VF.StaveNote({keys: [musicNote], duration: noteDuration}));
+        notesPackage.push(new VF.StaveNote({keys: [musicNote], duration: 'q'}));
         
         // if(i === ipaOfWords.length - 1){
         //     let diffDuration = 32 - numNotes;
@@ -235,7 +238,7 @@ for(let i = 0; i<ipaOfWords.length; i++){
     }
     // console.log("NOTEDURATION", noteDuration)
     // console.log("NUMNOTES", numNotes);
-    // console.log("NOTESPACKAGE", notesPackage)
+    console.log("NOTESPACKAGE", notesPackage)
 console.log("NOTESPACKAGEARRAY", notePackageArray)
     // console.log(char.charCodeAt(0));
     // const noteCharCode = char.charCodeAt(0) + 2;
