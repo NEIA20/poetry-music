@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import Poem from './Poem'
-
 import logo from './logo.svg';
+import Poem from './Poem'
+// import VF from './VexFlowFile.js';
+
 import './App.css';
+
 
 class App extends Component {
 
@@ -32,6 +34,7 @@ class App extends Component {
   }
 
   gotFileContents(contents){
+
      this.setState({poemContents: contents});
      console.log("POEMCONENTS", this.state.poemContents);
   }
@@ -47,12 +50,17 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <input onChange={this.handleFileSelect} type="file" id="files" name="files[]" multiple />
-        <output id="list"></output>
-        <Poem contents={this.state.poemContents}/>
+         <output id="list"></output>
+       <Poem contents={this.state.poemContents}/>
+
+
       </div>
     );
   }
 }
+
+
+
 
 
 

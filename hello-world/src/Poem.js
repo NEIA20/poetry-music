@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import {Vex} from './VexFlowFile.js';
 // import * as syllable from 'syllable';
 // console.log("SYLLABLE", syllable('coffee'))
 // import * as AlchemyAPI from 'alchemy-api'
@@ -21,10 +22,12 @@ import React, { Component } from 'react';
 
 class Poem extends Component {
 
+
     render(){
         console.log("POEMPROPS", this.props)
         return(
-            <div>{this.props.contents}</div>
+           
+            <div id="content">{this.props.contents}</div>
         )
             
         

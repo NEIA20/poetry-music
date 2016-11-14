@@ -1,0 +1,16 @@
+{
+  "separator": " ",
+  "currentFormat": "XML",
+  "attributes": [],
+  "formatTable": [
+    "JSON",
+    "XML",
+    "CSV"
+  ],
+  "default": {
+    "separator": " ",
+    "currentFormat": "JSON",
+    "attributes": []
+  },
+  "tagName": "element"
+}
