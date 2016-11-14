@@ -38,10 +38,9 @@
 var VF = Vex.Flow;
 
 var div = document.getElementById("boo")
-console.log("DIV", div);
 var renderer = new VF.Renderer(div, VF.Renderer.Backends.SVG)
-console.log("RENDERER", renderer)
-renderer.resize(500, 500);
+
+renderer.resize(500, 10000);
 var context = renderer.getContext();
 context.setFont("Arial", 10, "").setBackgroundFillStyle("#eed")
 
@@ -51,9 +50,8 @@ context.setFont("Arial", 10, "").setBackgroundFillStyle("#eed")
 //process notes below 
 
 
-
 const ipaOfWords = [ { IPA: 'ɪˈf', syllables: 1, note: 'i' },
-  { IPA: undefined, syllables: 1, note: 'y' },
+  { IPA: 'juˈ', syllables: 1, note: 'y' },
   { IPA: 'kæˈn', syllables: 1, note: 'c' },
   { IPA: 'kiˈp', syllables: 1, note: 'k' },
   { IPA: 'jɔˈɹ', syllables: 1, note: 'y' },
@@ -61,8 +59,75 @@ const ipaOfWords = [ { IPA: 'ɪˈf', syllables: 1, note: 'i' },
   { IPA: 'wɛˈn', syllables: 1, note: 'w' },
   { IPA: 'ɔˈl', syllables: 1, note: 'a' },
   { IPA: 'ʌbawˈt', syllables: 2, note: 'a' },
+  { IPA: undefined, syllables: 2, note: 'y' },
+  { IPA: 'luˈzɪŋ', syllables: 2, note: 'l' },
+  { IPA: 'ðɛˈɹz', syllables: 1, note: 't' },
+  { IPA: 'ʌnd', syllables: 1, note: 'a' },
+  { IPA: 'blejˈmɪŋ', syllables: 2, note: 'b' },
+  { IPA: 'ɪˈt', syllables: 1, note: 'i' },
+  { IPA: 'ɑˈn', syllables: 1, note: 'o' },
+  { IPA: undefined, syllables: 2, note: 'y' },
   { IPA: 'juˈ', syllables: 1, note: 'y' },
-  { IPA: 'ɑˈɹ', syllables: 1, note: 'a' } ]
+  { IPA: 'kæˈn', syllables: 1, note: 'c' },
+  { IPA: 'tɹʌˈst', syllables: 1, note: 't' },
+  { IPA: 'jɚsɛˈlf', syllables: 2, note: 'y' },
+  { IPA: 'wɛˈn', syllables: 1, note: 'w' },
+  { IPA: 'ɔˈl', syllables: 1, note: 'a' },
+  { IPA: 'mɛˈn', syllables: 1, note: 'm' }, //here
+  { IPA: 'dawˈt', syllables: 1, note: 'd' },
+  { IPA: undefined, syllables: 2, note: 'y' },
+  { IPA: 'mejˈk', syllables: 1, note: 'm' },
+  { IPA: 'ʌlawˈʌns', syllables: 3, note: 'a' },
+//   { IPA: 'fɔˈɹ', syllables: 1, note: 'f' },
+//   { IPA: 'ðɛˈɹ', syllables: 1, note: 't' },
+//   { IPA: 'dawˈtɪŋ', syllables: 2, note: 'd' },
+  
+  ]
+
+
+//   { IPA: 'mɛˈn', syllables: 1, note: 'm' },
+//   { IPA: 'dawˈt', syllables: 1, note: 'd' },
+//   { IPA: undefined, syllables: 2, note: 'y' },
+//   { IPA: 'mejˈk', syllables: 1, note: 'm' },
+//   { IPA: 'ʌlawˈʌns', syllables: 3, note: 'a' },
+//   { IPA: 'fɔˈɹ', syllables: 1, note: 'f' },
+//   { IPA: 'ðɛˈɹ', syllables: 1, note: 't' },
+//   { IPA: 'dawˈtɪŋ', syllables: 2, note: 'd' },
+//   { IPA: undefined, syllables: 2, note: 't' },
+//   { IPA: 'juˈ', syllables: 1, note: 'y' },
+//   { IPA: 'kæˈn', syllables: 1, note: 'c' },
+//   { IPA: 'wejˈt', syllables: 1, note: 'w' },
+//   { IPA: 'ʌnd', syllables: 1, note: 'a' },
+//   { IPA: 'nɑˈt', syllables: 1, note: 'n' },
+//   { IPA: 'biˈ', syllables: 1, note: 'b' },
+//   { IPA: 'tajˈɚd', syllables: 1, note: 't' },
+//   { IPA: 'bajˈ', syllables: 1, note: 'b' },
+//   { IPA: undefined, syllables: 3, note: 'w' },
+//   { IPA: 'biˈɪŋ', syllables: 2, note: 'b' },
+//   { IPA: 'lajˈd', syllables: 1, note: 'l' },
+//   { IPA: undefined, syllables: 2, note: 'a' },
+//   { IPA: undefined, syllables: 1, note: 'd' },
+//   { IPA: 'diˈl', syllables: 1, note: 'd' },
+//   { IPA: 'ɪn', syllables: 1, note: 'i' },
+//   { IPA: undefined, syllables: 2, note: 'l' },
+//   { IPA: 'biˈɪŋ', syllables: 2, note: 'b' },
+//   { IPA: undefined, syllables: 2, note: 'h' },
+//   { IPA: undefined, syllables: 1, note: 'd' },
+//   { IPA: 'gɪˈv', syllables: 1, note: 'g' },
+//   { IPA: 'wejˈ', syllables: 1, note: 'w' },
+//   { IPA: 'tuˈ', syllables: 1, note: 't' },
+//   { IPA: undefined, syllables: 2, note: 'h' } ]
+// const ipaOfWords = [ { IPA: 'ɪˈf', syllables: 1, note: 'i' },
+//   { IPA: undefined, syllables: 1, note: 'y' },
+//   { IPA: 'kæˈn', syllables: 1, note: 'c' },
+//   { IPA: 'kiˈp', syllables: 1, note: 'k' },
+//   { IPA: 'jɔˈɹ', syllables: 1, note: 'y' },
+//   { IPA: 'hɛˈd', syllables: 1, note: 'h' },
+//   { IPA: 'wɛˈn', syllables: 1, note: 'w' },
+//   { IPA: 'ɔˈl', syllables: 1, note: 'a' },
+//   { IPA: 'ʌbawˈt', syllables: 2, note: 'a' },
+//   { IPA: 'juˈ', syllables: 1, note: 'y' },
+//   { IPA: 'ɑˈɹ', syllables: 1, note: 'a' } ]
 
 
 const notesDictionary = {
@@ -115,7 +180,7 @@ for(let i = 0; i<ipaOfWords.length; i++){
     const musicNote = notesDictionary[char];
     const syllables = ipaOfWords[i].syllables;
     const noteDuration = durationDictionary[syllables];
-    console.log(ipaOfWords.length)
+    // console.log(ipaOfWords.length)
     //find number of staves needed based on the 
     //total duration of the words 
 
@@ -158,12 +223,12 @@ for(let i = 0; i<ipaOfWords.length; i++){
         notePackageArray.push(notesPackage);
         notesPackage = [];
         numNotes = 0;
-        console.log("NOTESPACKAGEARRAY", notePackageArray)
+        // console.log("NOTESPACKAGEARRAY", notePackageArray)
     }
-    console.log("NOTEDURATION", noteDuration)
-    console.log("NUMNOTES", numNotes);
-    console.log("NOTESPACKAGE", notesPackage)
-
+    // console.log("NOTEDURATION", noteDuration)
+    // console.log("NUMNOTES", numNotes);
+    // console.log("NOTESPACKAGE", notesPackage)
+console.log("NOTESPACKAGEARRAY", notePackageArray)
     // console.log(char.charCodeAt(0));
     // const noteCharCode = char.charCodeAt(0) + 2;
     // const musicNote = String.fromCharCode(noteCharCode);
@@ -217,16 +282,16 @@ for(let i = 0; i<notePackageArray.length; i++){
         stavesArray.push(new VF.Stave(x, y, 400));
         stavesArray[i].addClef("treble").addTimeSignature("4/4")
         stavesArray[i].setContext(context).draw()
-        console.log("STAVESARRAY[0]", stavesArray, i)
+        // console.log("STAVESARRAY[0]", stavesArray, i)
         var voice = new VF.Voice({num_beats: 4,  beat_value: 4});
         voice.addTickables(notePackageArray[i]);
         var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 400);
        voice.draw(context, stavesArray[i]);
     }else{
-        y+=120;
+        y+=150;
         stavesArray.push(new VF.Stave(x, y, 400));
         stavesArray[i].setContext(context).draw()
-        console.log("STAVESARRAYEVEN", stavesArray, i)
+        // console.log("STAVESARRAYEVEN", stavesArray, i)
          var voice = new VF.Voice({num_beats: 4,  beat_value: 4});
         voice.addTickables(notePackageArray[i]);
         var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 400);
