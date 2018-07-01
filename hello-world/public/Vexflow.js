@@ -1,40 +1,5 @@
 
 
-
-// const ipa = require('.');
-
-
-
-// function handleFileSelect(evt) {
-//     const files = evt.target.files; 
-//      const file = evt.target.files[0];
-   
-//         const reader = new FileReader();
-//         reader.onload = (evt) => {
-//           if (evt.target.readyState == FileReader.DONE) { 
-//         document.getElementById('poem').textContent = evt.target.result;
-//             poemContents = evt.target.result;  
-//             console.log("SETJUST FINE", poemContents.indexOf("\n"));
-//         }
-//           // The file's text will be printed here
-         
-         
-//         };
-
-//         reader.readAsText(file);
-//   }
-
-//   document.getElementById('files').addEventListener('change', handleFileSelect, false);
-
-//  console.log("!HERE!!!!1", window.poemContents)
-
-
-
-// const str1 = 'If you can keep your head when all about you' 
-// const str2 = 'Are losing theirs and blaming it on you'   
-
-// var poem = document.getElementById("content").textContent;
-
 var VF = Vex.Flow;
 
 var div = document.getElementById("boo")
@@ -317,158 +282,6 @@ const ipaOfWords = [ { IPA: 'ɪˈf', syllables: 1, note: 'i', endOfVerse: false 
 
   ]
 
-// const ipaOfWords = [ { IPA: 'ɪˈf', syllables: 1, note: 'i' },
-//   { IPA: undefined, syllables: 1, note: 'y' },
-//   { IPA: 'kæˈn', syllables: 1, note: 'c' },
-//   { IPA: 'kiˈp', syllables: 1, note: 'k' },
-//   { IPA: 'jɔˈɹ', syllables: 1, note: 'y' },
-//   { IPA: 'hɛˈd', syllables: 1, note: 'h' },
-//   { IPA: 'wɛˈn', syllables: 1, note: 'w' },
-//   { IPA: 'ɔˈl', syllables: 1, note: 'a' },
-//   { IPA: 'ʌbawˈt', syllables: 2, note: 'a' },
-//   { IPA: 'juˈ', syllables: 1, note: 'y' },
-//   { IPA: 'ɑˈɹ', syllables: 1, note: 'a' }
-
-
-//  ]
-
-
-// const ipaOfWords = [ { IPA: 'bɪkɔˈz', syllables: 2, note: 'b', endOfVerse: false },
-//   { IPA: 'ajˈ', syllables: 1, note: 'i', endOfVerse: false },
-//   { IPA: 'kʊˈd', syllables: 1, note: 'c', endOfVerse: false },
-//   { IPA: 'nɑˈt', syllables: 1, note: 'n', endOfVerse: false },
-//   { IPA: 'stɑˈp', syllables: 1, note: 's', endOfVerse: false },
-//   { IPA: 'fɔˈɹ', syllables: 1, note: 'f', endOfVerse: false },
-//   { IPA: 'dɛˈθ', syllables: 1, note: 'd', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 'h', endOfVerse: false },
-//   { IPA: 'kajˈndli', syllables: 2, note: 'k', endOfVerse: false },
-//   { IPA: 'stɑˈpt', syllables: 1, note: 's', endOfVerse: false },
-//   { IPA: 'fɔˈɹ', syllables: 1, note: 'f', endOfVerse: false },
-//   { IPA: 'miˈ', syllables: 1, note: 'm', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: 'kæˈɹɪʤ', syllables: 2, note: 'c', endOfVerse: false },
-//   { IPA: 'hɛˈld', syllables: 1, note: 'h', endOfVerse: false },
-//   { IPA: 'bʌˈt', syllables: 1, note: 'b', endOfVerse: false },
-//   { IPA: 'ʤʌˈst', syllables: 1, note: 'j', endOfVerse: false },
-//   { IPA: 'awɚsɛˈlvz', syllables: 2, note: 'o', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 'a', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 'i', endOfVerse: false },
-//   { IPA: 'slowˈli', syllables: 2, note: 's', endOfVerse: false },
-//   { IPA: 'dɹowˈv', syllables: 1, note: 'd', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 'j', endOfVerse: false },
-//   { IPA: 'hiˈ', syllables: 1, note: 'h', endOfVerse: false },
-//   { IPA: 'nuˈ', syllables: 1, note: 'k', endOfVerse: false },
-//   { IPA: 'nowˈ', syllables: 1, note: 'n', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 'h', endOfVerse: false },
-//   { IPA: 'ajˈ', syllables: 1, note: 'i', endOfVerse: false },
-//   { IPA: 'hæˈd', syllables: 1, note: 'h', endOfVerse: false },
-//   { IPA: 'pʊˈt', syllables: 1, note: 'p', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 'a', endOfVerse: false },
-//   { IPA: 'lejˈbɚ', syllables: 2, note: 'l', endOfVerse: false },
-//   { IPA: 'ʌnd', syllables: 1, note: 'a', endOfVerse: false },
-//   { IPA: 'majˈ', syllables: 1, note: 'm', endOfVerse: false },
-//   { IPA: 'lɛˈʒɚ', syllables: 2, note: 'l', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: 'fɔˈɹ', syllables: 1, note: 'f', endOfVerse: false },
-//   { IPA: 'hɪˈz', syllables: 1, note: 'h', endOfVerse: false },
-//   { IPA: 'sʌvɪˈlʌti', syllables: 2, note: 'c', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 'a', endOfVerse: false },
-//   { IPA: 'wiˈ', syllables: 1, note: 'w', endOfVerse: false },
-//   { IPA: 'pæˈst', syllables: 1, note: 'p', endOfVerse: false },
-//   { IPA: 'ðʌ', syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 's', endOfVerse: false },
-//   { IPA: 'wɛˈɹ', syllables: 1, note: 'w', endOfVerse: false },
-//   { IPA: 'ʧɪˈldɹʌn', syllables: 2, note: 'c', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 's', endOfVerse: false },
-//   { IPA: 'ɹɪsɛˈs', syllables: 2, note: 'r', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 'a', endOfVerse: false },
-//   { IPA: 'ɪn', syllables: 1, note: 'i', endOfVerse: false },
-//   { IPA: 'ðʌ', syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: 'ɹɪˈŋ', syllables: 1, note: 'r', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 'w', endOfVerse: false },
-//   { IPA: 'pæˈst', syllables: 1, note: 'p', endOfVerse: false },
-//   { IPA: 'ðʌ', syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: 'fiˈldz', syllables: 1, note: 'f', endOfVerse: false },
-//   { IPA: 'ʌˈv', syllables: 1, note: 'o', endOfVerse: false },
-//   { IPA: 'gejˈzɪŋ', syllables: 2, note: 'g', endOfVerse: false },
-//   { IPA: 'gɹejˈn', syllables: 1, note: 'g', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: '', endOfVerse: false },
-//   { IPA: 'wiˈ', syllables: 1, note: 'w', endOfVerse: false },
-//   { IPA: 'pæˈst', syllables: 1, note: 'p', endOfVerse: false },
-//   { IPA: 'ðʌ', syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: 'sɛˈtɪŋ', syllables: 2, note: 's', endOfVerse: false },
-//   { IPA: 'sʌˈn', syllables: 1, note: 's', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 'e', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 'r', endOfVerse: false }, 
-//   { IPA: 'ɔˈɹ', syllables: 1, note: 'o', endOfVerse: false },
-//   { IPA: 'ɹæˈðɚ', syllables: 2, note: 'r', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 'd', endOfVerse: false },
-//   { IPA: 'hiˈ', syllables: 1, note: 'h', endOfVerse: false },
-//   { IPA: 'pæˈst', syllables: 1, note: 'p', endOfVerse: false },
-//   { IPA: 'ʌˈs', syllables: 1, note: 'u', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: 'duˈz', syllables: 1, note: 'd', endOfVerse: false },
-//   { IPA: 'dɹuˈ', syllables: 1, note: 'd', endOfVerse: false },
-//   { IPA: 'kwɪˈvɚɪŋ', syllables: 2, note: 'q', endOfVerse: false },
-//   { IPA: 'ʌnd', syllables: 1, note: 'a', endOfVerse: false },
-//   { IPA: 'ʧɪˈl', syllables: 1, note: 'c', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 'o', endOfVerse: false },
-//   { IPA: 'fɔˈɹ', syllables: 1, note: 'f', endOfVerse: false },
-//   { IPA: 'owˈnli', syllables: 2, note: 'o', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 'g', endOfVerse: false },
-//   { IPA: 'majˈ', syllables: 1, note: 'm', endOfVerse: false },
-//   { IPA: 'gawˈn', syllables: 1, note: 'g', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 'a', endOfVerse: false },
-//   { IPA: 'majˈ', syllables: 1, note: 'm', endOfVerse: false },
-//   { IPA: 'tɪˈpʌt', syllables: 2, note: 't', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 'i', endOfVerse: false },
-//   { IPA: 'owˈnli', syllables: 2, note: 'o', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 'w', endOfVerse: false },
-//   { IPA: 'pɔˈzd', syllables: 2, note: 'p', endOfVerse: false },
-//   { IPA: 'bɪfɔˈɹ', syllables: 2, note: 'b', endOfVerse: false },
-//   { IPA: 'ʌ', syllables: 1, note: 'a', endOfVerse: false },
-//   { IPA: 'hawˈs', syllables: 1, note: 'h', endOfVerse: false },
-//   { IPA: 'ðæˈt', syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 's', endOfVerse: false },
-//   { IPA: 'swɛˈlɪŋ', syllables: 2, note: 's', endOfVerse: false },
-//   { IPA: 'ʌˈv', syllables: 1, note: 'o', endOfVerse: false },
-//   { IPA: 'ðʌ', syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: 'gɹawˈnd', syllables: 1, note: 'g', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: 'ɹuˈf', syllables: 1, note: 'r', endOfVerse: false },
-//   { IPA: 'wɑˈz', syllables: 1, note: 'w', endOfVerse: false },
-//   { IPA: 'skɛˈɹsli', syllables: 2, note: 's', endOfVerse: false },
-//   { IPA: 'vɪˈzʌbʌl', syllables: 2, note: 'v', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 'c', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: '', endOfVerse: false },
-//   { IPA: 'ɪn', syllables: 1, note: 'i', endOfVerse: false },
-//   { IPA: 'ðʌ', syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: 'gɹawˈnd', syllables: 1, note: 'g', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 's', endOfVerse: false },
-//   { IPA: 'ðɛˈn', syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 'n', endOfVerse: false },
-//   { IPA: undefined, syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: 'sɛˈnʧɚiz', syllables: 2, note: 'c', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 'n', endOfVerse: false },
-//   { IPA: 'ʌnd', syllables: 1, note: 'a', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 'y', endOfVerse: false },
-//   { IPA: 'ʃɔˈɹtɚ', syllables: 2, note: 's', endOfVerse: false },
-//   { IPA: 'ðæˈn', syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: 'ðʌ', syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 'd', endOfVerse: false },
-//   { IPA: 'fɚˈst', syllables: 1, note: 'f', endOfVerse: false },
-//   { IPA: 'sɚmajˈzd', syllables: 2, note: 's', endOfVerse: false },
-//   { IPA: 'ðʌ', syllables: 1, note: 't', endOfVerse: false },
-//   { IPA: 'hɔˈɹsɪz', syllables: 1, note: 'h', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 'h', endOfVerse: false },
-//   { IPA: 'tʌwɔˈɹd', syllables: 2, note: 't', endOfVerse: false },
-//   { IPA: 'ɪtɚˈnʌti', syllables: 2, note: 'e', endOfVerse: false },
-//   { IPA: undefined, syllables: 2, note: 'k', endOfVerse: false } 
-//   ]
-
-
 const notesDictionary = {
        'a': "f/3", 
         'b': "g/3",
@@ -499,7 +312,6 @@ const notesDictionary = {
 }
 
 const durationDictionary = {
-    // 'w': 1,
     1: 'q', 
     2: 'q',
     3: '8',
@@ -520,17 +332,9 @@ for(let i = 0; i<ipaOfWords.length; i++){
     const musicNote = notesDictionary[char];
     const syllables = ipaOfWords[i].syllables;
     const noteDuration = durationDictionary[syllables];
-    // console.log(ipaOfWords.length)
     //find number of staves needed based on the 
     //total duration of the words 
-    // console.log("musicNote-----", musicNote)
     
-
-    // if(ipaOfWords[i].endOfVerse === false){
-    //     notesPackage.push(new VF.StaveNote({keys: ["b/4"], duration: 'qr'}));
-    //     notesPackage.push(new VF.StaveNote({keys: ["b/4"], duration: 'qr'}));
-    //     numNotes +=16;
-    // }
 
     if(numNotes < 32){
         if(noteDuration === 'h') {
@@ -551,49 +355,15 @@ for(let i = 0; i<ipaOfWords.length; i++){
         }
 
         notesPackage.push(new VF.StaveNote({keys: [musicNote], duration: 'q'}));
-        
-        // if(i === ipaOfWords.length - 1){
-        //     let diffDuration = 32 - numNotes;
-        //     while(diffDuration >0){
-        //         notesPackage.push(new Vex.Flow.StaveNote({ keys: ["b/4"], duration: "qr" }));
-        //         diffDuration -= 2;
-        //     }
-        //     notePackageArray.push(notesPackage);
-        //     notesPackage = [];
-        //     numNotes = 0;
-        //     console.log("NOTESPACKAGEARRAY", notePackageArray)
-        //     break;
-        // }
-        
 
-    }else{
+      }else{
         notePackageArray.push(notesPackage);
         notesPackage = [];
         numNotes = 0;
-        // console.log("NOTESPACKAGEARRAY", notePackageArray)
     }
-    // console.log("NOTEDURATION", noteDuration)
-    // console.log("NUMNOTES", numNotes);
-//     console.log("NOTESPACKAGE", notesPackage)
-// console.log("NOTESPACKAGEARRAY", notePackageArray)
-    // console.log(char.charCodeAt(0));
-    // const noteCharCode = char.charCodeAt(0) + 2;
-    // const musicNote = String.fromCharCode(noteCharCode);
-    // console.log(char, musicNote);
-    // console.log(musicNote);
-    // if(numNotes === 4 ){
-    //     notes.push(new Vex.Flow.BarNote());
-    //     numNotes = 0;
-    // }else{
-    //     notes.push(new VF.StaveNote({keys: [musicNote], duration: 'q'}))
-    // }
-   
 }
 
 numberOfStaves = Math.ceil(totalDuration/32);
-
-console.log("STAVES", numberOfStaves);
-
 
 var notesMeasure1 = [
 
@@ -609,44 +379,15 @@ let x = 10;
 let y = 40;
 for(let i = 0; i<notePackageArray.length; i++){
     
-    // if(i === 1){
-    //     stavesArray.push(new VF.Stave(x, y, 400));
-    //     stavesArray[0].addClef("treble").addTimeSignature("4/4")
-    //     stavesArray[0].setContext(context).draw()
-    //     console.log("STAVESARRAY[0]", stavesArray, i)
-       
-    // }else if(i%2 !==0){
-    //     y+=110;
-    //     stavesArray.push(new VF.Stave(x, y, 400));
-    //     stavesArray[i-1].setContext(context).draw()
-    //     console.log("STAVESARRAYODD", stavesArray, i)
-    // }else{
-    //     x+=400;
-    //     stavesArray.push(new VF.Stave(x, y, 400));
-    //     stavesArray[i-1].setContext(context).draw()
-    //     console.log("STAVESARRAYEVEN", stavesArray, i)
-    // }
-
     if(i === 0){
         stavesArray.push(new VF.Stave(10, y, 400));
         stavesArray[i].addClef("treble").addTimeSignature("4/4")
         stavesArray[i].setContext(context).draw()
-        // console.log("STAVESARRAY[0]", stavesArray, i)
         var voice = new VF.Voice({num_beats: 4,  beat_value: 4});
         voice.addTickables(notePackageArray[i]);
         var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 400);
        voice.draw(context, stavesArray[i]);
     }
-    // }else if (i%2 ===0){
-    //     y+=150;
-    //     stavesArray.push(new VF.Stave(10, y, 400));
-    //     stavesArray[i].setContext(context).draw()
-    //     // console.log("STAVESARRAYEVEN", stavesArray, i)
-    //      var voice = new VF.Voice({num_beats: 4,  beat_value: 4});
-    //     voice.addTickables(notePackageArray[i]);
-    //     var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 400);
-    //    voice.draw(context, stavesArray[i]);
-    // }
     else {
         if(x === 870){
             x = 10; 
@@ -656,7 +397,6 @@ for(let i = 0; i<notePackageArray.length; i++){
         }
         stavesArray.push(new VF.Stave(x, y, 400));
         stavesArray[i].setContext(context).draw()
-        // console.log("STAVESARRAYEVEN", stavesArray, i)
          var voice = new VF.Voice({num_beats: 4,  beat_value: 4});
         voice.addTickables(notePackageArray[i]);
         var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 400);
@@ -665,46 +405,3 @@ for(let i = 0; i<notePackageArray.length; i++){
 
     
 }
-
-// console.log("STAVESARRAY", stavesArray)
-
-
-
-// console.log(numberOfStaves);
-
-//   VF.Formatter.FormatAndDraw(context, stavesArray[0], notesMeasure1)
-
-// var stave = new VF.Stave(10, 60, 400);
-// stave.count = 1
-// console.log("STAVE", stave)
-
-//         stave.addClef("treble").addTimeSignature("4/4")
-//         stave.setContext(context).draw()
-
-//   var notes = [
-//   // A quarter-note C.
-//   new VF.StaveNote({ keys: ["c/6"], duration: "q" }),
-
-//   // A quarter-note D.
-//   new VF.StaveNote({ keys: ["d/4"], duration: "q" }),
-
-//   // A quarter-note rest. Note that the key (b/4) specifies the vertical
-//   // position of the rest.
-//   new VF.StaveNote({ keys: ["b/4"], duration: "qr" }),
-
-//   // A C-Major chord.
-//   new VF.StaveNote({ keys: ["c/4", "e/4", "g/4"], duration: "q" })
-// ];
-
-// // Create a voice in 4/4 and add above notes
-// var voice = new VF.Voice({num_beats: 4,  beat_value: 4});
-//   voice.setStrict(false)
-// voice.addTickables(notesMeasure1);
-
-// // Format and justify the notes to 400 pixels.
-// var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 400);
-
-// // Render voice
-// voice.draw(context, stavesArray[0]);
-
-

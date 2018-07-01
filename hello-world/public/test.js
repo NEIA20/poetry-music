@@ -51,41 +51,10 @@ const ipaOfWords = [];
 
 for(let i = 0; i<words.length; i++){
 
-    // if(words[i].indexOf("\n") > -1){
-    //     words[i] = words[i].substring(words[i].length-1);
-    //     console.log(words[i])
-    //     ipaOfWords.push(ipa.ipadict[words[i].toLowerCase()]);
-    //     ipaOfWords.push("\n");
-    // }
-    // if(words[i].indexOf("-") >-1) {
-    //           console.log(words[i])
-    //     ipaOfWords.push(ipa.ipadict[words[i].toLowerCase()]);
-    //     ipaOfWords.push("dash");
-    // }
-    //  if(words[i].indexOf("!")  >-1){
-    //     ipaOfWords.push("bang");
-    // }
-    //  if(words[i].indexOf(":")  >-1){
-    //     ipaOfWords.push("colon");
-    // }
-    //  if(words[i].indexOf(";")  >-1){
-    //     ipaOfWords.push("semi");
-    // }
-    //  if(words[i].indexOf("'")  >-1){
-    //     ipaOfWords.push("apos");
-    // }
-    //  if(words[i].match(/[.]{2,}/g)){
-    //     ipaOfWords.push("ellipsis");
-    // }
     ipaOfWords.push(ipa.ipadict[words[i].toLowerCase()])
 }
 
-// const ipaOfWords = words.map((word) => {
-//     return ipa.ipadict[word.toLowerCase()]
-// })
-
 //if the word contains a newline character it'll be at the end of 
 //the word --> substring it and push it onto the ipaOfWords: 
-    //
 
 console.log(ipaOfWords);

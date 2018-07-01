@@ -1,39 +1,3 @@
-
-
-
-// const ipa = require('.');
-
-
-
-// function handleFileSelect(evt) {
-//     const files = evt.target.files; 
-//      const file = evt.target.files[0];
-   
-//         const reader = new FileReader();
-//         reader.onload = (evt) => {
-//           if (evt.target.readyState == FileReader.DONE) { 
-//         document.getElementById('poem').textContent = evt.target.result;
-//             poemContents = evt.target.result;  
-//             console.log("SETJUST FINE", poemContents.indexOf("\n"));
-//         }
-//           // The file's text will be printed here
-         
-         
-//         };
-
-//         reader.readAsText(file);
-//   }
-
-//   document.getElementById('files').addEventListener('change', handleFileSelect, false);
-
- console.log("!HERE!!!!1", window.poemContents)
-
-
-// const str1 = 'If you can keep your head when all about you' 
-// const str2 = 'Are losing theirs and blaming it on you'   
-
-// var poem = document.getElementById("content").textContent;
-
 var VF = Vex.Flow;
 
 var div = document.getElementById("boo")
